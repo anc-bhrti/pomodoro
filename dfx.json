@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "icphello_backend": {
+      "main": "src/icphello_backend/main.mo",
+      "type": "motoko",
+      "ingress_expiry":"2024-09-23 15:28:18.376056124 UTC"
+
+    },
+    "icphello_frontend": {
+      "dependencies": [
+        "icphello_backend"
+      ],
+      "source": [
+        "src/icphello_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icphello_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
